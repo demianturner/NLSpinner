@@ -21,3 +21,6 @@ See the demo app for all the library's features
 ## Other
 Pull requests are welcome, but I'm going to keep this library lightweight featurewise.  
 Acknowledgements to [DJProgressHUD_OSX](https://github.com/danielmj/DJProgressHUD_OSX) and [YRKSpinningProgressIndicator](https://github.com/kelan/YRKSpinningProgressIndicator) for inspiration
+
+## Adapated to Swift package
+2022.12.01

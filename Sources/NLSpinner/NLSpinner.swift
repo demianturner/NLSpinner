@@ -6,10 +6,9 @@
 //
 //
 
-import Foundation
+import AppKit
 
-open class NLSpinner : NSView {
-    
+open class NLSpinner: NSView {
     private var finColors = [NSColor]()
     private var position: Int = 0
     private var isFadingOut: Bool = false
@@ -86,6 +85,7 @@ open class NLSpinner : NSView {
         startTime = NSDate()
         self.startAnimationTimer()
     }
+    
     open func stopAnimation() {
         isFadingOut = true
     }
@@ -143,6 +143,7 @@ open class NLSpinner : NSView {
         RunLoop.current.add(animationTimer, forMode: RunLoop.Mode.default)
         RunLoop.current.add(animationTimer, forMode: RunLoop.Mode.eventTracking)
     }
+    
     private func stopAnimationTimer() {
         self.isAnimating = false
         isFadingOut = false
